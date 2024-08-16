@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended-type-checked"
+  ],
+  "rules": {
+    "@next/next/no-img-element": "off"
+  },
+  "parserOptions": { "project": ["./tsconfig.json"] }
 }
